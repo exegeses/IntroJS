@@ -7,11 +7,15 @@
 <body>
     <h1>Intercambiar imágenes usando JS</h1>
     <nav>
-        <a href="#">HTML</a> |
-        <a href="#">CSS</a> |
-        <a href="#">Javascript</a>
+        <a href="#" onclick="document.getElementById('logo').src='logos/logohtml.png'">HTML</a> |
+        <a href="#" onclick="document.getElementById('logo').src='logos/logocss.png'">CSS</a> |
+        <a href="#"
+           onclick="document.getElementById('logo').src='logos/logojs.png'">
+            Javascript
+        </a>
     </nav>
-    <img src="logos/logohtml.png">
+
+    <img src="logos/logohtml.png" id="logo">
 
 </body>
 </html>
