@@ -12,3 +12,10 @@ body{
     button{
         padding: 15px 35px;
     }
+    
+    div#caja{
+        width: 160px;
+        height: 90px;
+        background-color: #ccc;
+        margin-top: 25px;
+    }
