@@ -26,4 +26,5 @@
     reloj();
 
     // actualizar el llamado a la función
-    setInterval( reloj, 1000 )
+    setInterval( reloj, 1000 );
+    
