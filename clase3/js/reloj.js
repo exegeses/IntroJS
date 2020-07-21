@@ -10,9 +10,11 @@
         var hora = fecha.getHours();
         //obtenemos los minutos
         var minutos = fecha.getMinutes();
+        //obtenemos segundos
+        var segundos = fecha.getSeconds();
 
         //imprimimos info en el reloj
-        verReloj.innerText = hora +':'+ minutos;
+        verReloj.innerText = hora +':'+ minutos +':'+ segundos;
     }
 
     reloj();
