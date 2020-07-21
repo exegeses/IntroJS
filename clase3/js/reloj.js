@@ -18,3 +18,6 @@
     }
 
     reloj();
+
+    // actualizar el llamado a la función
+    setInterval( reloj, 1000 )
