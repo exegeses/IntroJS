@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #d5e0de;
+    color: #222418;
+    font-family: Helvetica;
+    width: 900px;
+    margin: auto;
+}
+    h1{
+        padding: 20px 10px;
+        border-left : 8px solid #efbb81;
+    }
+    button{
+        padding: 15px 35px;
+    }
+    
+    div#caja{
+        width: 160px;
+        height: 90px;
+        background-color: #ccc;
+        margin-top: 25px;
+    }
