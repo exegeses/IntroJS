@@ -11,7 +11,19 @@
             console.log( numero );
 
         //mostrar el dado
-        elDado.innerText = numero;
+        //elDado.innerText = numero;
+        elDado.innerHTML = '<img src="dados/dado'+numero+'.png">';
+    }
+
+    function obtenerNumeroAleatorio(inicio, factor)
+    {
+        var numeroAleatorio = Math.random();
+        var numeroMultiplicado = (numeroAleatorio * (factor-1)) + inicio;
+        console.log( numeroMultiplicado );
+        var numero = Math.round( numeroMultiplicado );
+        return numero;
     }
 
     tirarDado();
+
+    console.log( 'numero: ' + obtenerNumeroAleatorio(1, 6) )
