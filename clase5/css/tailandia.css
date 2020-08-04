@@ -1,0 +1,16 @@
+    body{
+        font-family: helvetica;
+        color: #52BAE0;
+        width: 650px;
+        margin: auto;
+    }
+
+    .contenedor{
+        width:100px;
+        padding:5px;
+        margin:2px;
+        float:left;
+        border: 1px solid #ccc;
+    }
+    h1{padding-left:30px;font-size: 35px}
+    h2{font-size: 11px; color: #555;}
