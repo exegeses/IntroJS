@@ -39,87 +39,36 @@
     </header>
     <main class="container">
 
-    <!-- incio Carousel -->
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagenes/primera.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/segunda.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/tercera.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="imagenes/cuarta.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-    <!-- fin Carousel -->
 
         <h1 class="py-3">Prueba usando bootstrap</h1>
-        <p class="alert alert-warning">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur atque aut eaque earum labore laudantium maxime minus, molestiae nobis.
-            <span class="badge badge-warning">Warning</span>
-        </p>
-        <hr>
-        <p class="bg-light p-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, debitis, dolores eos eum eveniet exercitationem facere impedit incidunt, ipsa iste laboriosam libero molestias nulla pariatur praesentium repellat reprehenderit tempore ut!
-            <a href="" class="btn btn-dark">Botón de prueba</a>
-        </p>
+        <div class="bg-light col-8 mx-auto p-4 border">
+            <form action="procesaDatos.php" method="post" onsubmit="return validar()">
+                Nombre: <br>
+                <input type="text"
+                       name="nombre" class="form-control">
+                <small class="mb-4 text-danger" id="errorNombre"></small>
+                <br>
+                Email: <br>
+                <input type="text"
+                       name="email" class="form-control">
+                <small class="mb-4 text-danger" id="errorEmail"></small>
+                <br>
+                Comentarios: <br>
+                <textarea name="comentacios"
+                          class="form-control"></textarea>
+                <br>
+                <button class="btn btn-dark">Enviar Comentarios</button>
+
+            </form>
+        </div>
 
         <hr>
-        <section class="row">
-
-            <article class="card col p-0">
-                <img src="imagenes/f1.png" class="img-card-top">
-                <div class="card-body">
-                    <h2>Nombre del producto</h2>
-                    descripción
-                </div>
-            </article>
-
-            <article class="card col p-0">
-                <img src="imagenes/f2.png" class="img-card-top">
-                <div class="card-body">
-                    <h2>Nombre del producto</h2>
-                    descripción
-                </div>
-            </article>
-
-            <article class="card col p-0">
-                <img src="imagenes/f3.png" class="img-card-top">
-                <div class="card-body">
-                    <h2>Nombre del producto</h2>
-                    descripción
-                </div>
-            </article>
-
-        </section>
-
     </main>
     <footer class="bg-dark fixed-bottom py-3 text-light text-center">
         Copyleft 2020
     </footer>
 
-
+    <script src="js/formulario.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
